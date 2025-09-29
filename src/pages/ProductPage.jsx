@@ -103,7 +103,7 @@ export function ProductPage() {
 
   const handleWhatsAppProduct = () => {
     const text =
-      `Hola Palo! Me interesa *${product.name}* (${formatARS(product.price)})\n` +
+      `Hola Iván! Me interesa *${product.name}* (${formatARS(product.price)})\n` +
       // poné la URL de producto SIN protocolo para que no cuente como link
       `Link: paloglow.shop/product/${product.id}`
     window.open(buildWhatsAppUrl(text), '_blank')

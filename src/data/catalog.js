@@ -31,6 +31,7 @@ export function useCatalog({ category = 'all' } = {}) {
       try {
         setLoading(true)
         setError(null)
+
         let query = supabase
           .from('products')
           .select('*')
@@ -57,26 +58,33 @@ export function useCatalog({ category = 'all' } = {}) {
   const categories = useMemo(() => {
     const cats = [
       'all',
-      'necklaces',
-      'esclavas',
-      'bracelets',
-      'rings',
-      'earrings',
-      'piercing',
-      'sets'
+      'auriculares',
+      'smartwatchs',
+      'cargadores',
+      'btParlantes',
+      'accesoriosPc',
+      'cables',
+      'accesoriosCel',
     ]
+
     const counts = Object.fromEntries(
-      cats.map(c => [c, c === 'all' ? products.length : products.filter(p => p.category === c).length])
+      cats.map(c => [
+        c,
+        c === 'all'
+          ? products.length
+          : products.filter(p => p.category === c).length
+      ])
     )
+
     return [
-      { id: 'all', name: 'Todos los productos', count: counts.all },
-      { id: 'necklaces', name: 'Collares', count: counts.necklaces },
-      { id: 'esclavas', name: 'esclavas', count: counts.esclavas },
-      { id: 'bracelets', name: 'Pulseras', count: counts.bracelets },
-      { id: 'rings', name: 'Anillos', count: counts.rings },
-      { id: 'earrings', name: 'Aros', count: counts.earrings },
-      { id: 'piercing', name: 'Piercing', count: counts.piercing },
-      { id: 'sets', name: 'Sets', count: counts.sets },
+      { id: 'all',           name: 'Todos los productos',    count: counts.all },
+      { id: 'auriculares',   name: 'Auriculares',            count: counts.auriculares },
+      { id: 'smartwatchs',   name: 'Smartwatchs',            count: counts.smartwatchs },
+      { id: 'cargadores',    name: 'Cargadores',             count: counts.cargadores },
+      { id: 'btParlantes',   name: 'Parlantes Bluetooth',    count: counts.btParlantes },
+      { id: 'accesoriosPc',  name: 'Accesorios de PC',       count: counts.accesoriosPc },
+      { id: 'cables',        name: 'Cables',                 count: counts.cables },
+      { id: 'accesoriosCel', name: 'Accesorios para celular',count: counts.accesoriosCel },
     ]
   }, [products])
 

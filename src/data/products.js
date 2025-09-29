@@ -1,397 +1,354 @@
 export const products = [
   {
     id: 1,
-    name: "Esclava Mariposa Strass",
+    name: "Auriculares Inalámbricos TWS Pro",
     price: 12000,
     originalPrice: 15000,
-    category: "esclavas",
+    category: "auriculares",
     description:
-      "Esclava rígida con diseño de mariposa y strass. Un toque delicado y femenino para cualquier look.",
+      "Auriculares TWS con estuche de carga, sonido balanceado y micrófono para llamadas claras.",
     features: [
-      "Acero quirúrgico 316L con baño dorado",
-      "Strass de alta calidad",
-      "Hipoalergénica",
-      "No se oxida ni pierde el color",
-      "Ajustable a diferentes tamaños de muñeca"
+      "Bluetooth 5.3, emparejamiento instantáneo",
+      "Autonomía total 20 h con estuche",
+      "Cancelación de ruido ambiental en llamadas (ENC)",
+      "Resistencia al sudor IPX4",
+      "Controles táctiles y modo juego"
     ],
-    images: [
-      "Producto1.jpeg"
-    ],
+    images: ["Producto1.jpeg"],
     inStock: true,
     featured: true,
     rating: 4.9,
     reviews: 187,
-    weight: "10 cm",
-    ingredients: "Acero Quirúrgico 316L, strass"
+    weight: "44 g (estuche + buds)",
+    ingredients: "Compatibilidad: iOS, Android, Windows"
   },
   {
     id: 2,
-    name: "Esclava Hermes strass ",
+    name: "Smartwatch Serie X AMOLED",
     price: 12000,
-    category: "esclavas",
+    category: "smartwatchs",
     description:
-      "Esclava rígida con diseño Hermes y strass. Un toque delicado y femenino para cualquier look.",
+      "Reloj inteligente con pantalla AMOLED, métricas de salud y notificaciones.",
     features: [
-      "Acero dorado macizo",
-      "Cadena rope 3 mm de grosor",
-      "Resistente al uso diario",
-      "Hipoalergénico",
-      "Longitud 17 cm + 3 cm de extensión"
+      "Pantalla 1.78” AMOLED",
+      "Oxímetro, FC 24/7 y sueño",
+      "GPS asistido por teléfono",
+      "Resistencia IP68",
+      "Autonomía hasta 7 días"
     ],
-    images: [
-      "Producto2.jpeg"
-    ],
+    images: ["Producto2.jpeg"],
     inStock: true,
     featured: true,
     rating: 4.8,
     reviews: 126,
-    weight: "17+3 cm",
-    ingredients: "18k gold plated stainless steel"
+    weight: "38 g",
+    ingredients: "Compatibilidad: Android 8+/iOS 12+"
   },
   {
     id: 3,
-    name: "Pulsera trebol Negro strass ",
+    name: "Soporte + Funda Magnética (MagSafe-ready)",
     price: 10000,
-    category: "bracelets",
+    category: "accesoriosCel",
     description:
-      "Pulsera Acero dorado con estilo trebol.",
+      "Kit de soporte magnético y funda slim para mejor agarre y uso en escritorio.",
     features: [
-      "Acero Dorado",
-      "Baño dorado resistente",
-      "Peso ultraliviano",
-      "Cierre click seguro",
-      "Diámetro 25 mm, grosor 2 mm"
+      "Agarre magnético seguro",
+      "Base plegable para ver videos",
+      "Borde elevado anti-golpes",
+      "Compatible con cargadores magnéticos"
     ],
-    images: [
-      "Producto5.jpeg"
-    ],
+    images: ["Producto5.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.7,
     reviews: 203,
-    weight: "Ø 25 mm",
-    ingredients: "18k gold plated stainless steel"
+    weight: "24 g",
+    ingredients: "TPU + policarbonato"
   },
   {
     id: 4,
-    name: "Esclava dorada apliques",
+    name: "Parlante Bluetooth Mini Bass",
     price: 12000,
-    category: "esclavas",
+    category: "btParlantes",
     description:
-      "Esclava dorada con apliques decorativos, ideal para realzar cualquier conjunto con un toque sofisticado.",
+      "Parlante compacto con graves potentes y manos libres.",
     features: [
-      "Acero quirurgico dorado",
-      "Apliques decorativos de diseño exclusivo",
-      "Hipoalergénica y resistente al agua",
-      "Ajustable a diferentes tamaños de muñeca",
-      "No pierde el color ni se oxida"
+      "Potencia 10 W RMS",
+      "Bluetooth 5.0 + Aux",
+      "Manos libres con micrófono",
+      "Autonomía 8 h"
     ],
-    images: [
-      "Producto4.jpeg",
-      "Producto10.jpeg"
-    ],
+    images: ["Producto4.jpeg", "Producto10.jpeg"],
     inStock: true,
     featured: true,
     rating: 4.6,
     reviews: 98,
-    weight: "Talla 6–9 ajustable",
-    ingredients: "18k gold plated stainless steel"
+    weight: "420 g",
+    ingredients: "Soporta MP3/WAV vía USB"
   },
   {
     id: 5,
-    name: "Esclava Hermes blanca",
+    name: "Cargador Rápido 20W USB-C",
     price: 12000,
-    category: "esclavas",
+    category: "cargadores",
     description:
-      "Esclava Acero Dorado Macizo con logo estilo Hermes.",
+      "Cargador de pared PD 20W ideal para iPhone y Android.",
     features: [
-      "Esclava Acero Dorado Macizo",
-      "Cierres clips",
-      "Baño dorado resistente",
-      "Libre de níquel y plomo",
-      "resistente al uso diario"
+      "Power Delivery 3.0 (20W)",
+      "Protección contra sobrecarga",
+      "Tamaño compacto",
+      "Apto viaje 100-240V"
     ],
-    images: [
-      "Producto3.jpeg"
-    ],
+    images: ["Producto3.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.9,
     reviews: 212,
-    weight: "40 cm + 45 cm (cada uno con 5 cm de extensión)",
-    ingredients: "18k gold plated stainless steel"
+    weight: "58 g",
+    ingredients: "Salida: USB-C 20W, PD3.0"
   },
   {
     id: 6,
-    name: "Pulsera trebol dorado strass",
+    name: "Auriculares Gamer con Micrófono",
     price: 10000,
-    category: "bracelets",
+    category: "auriculares",
     description:
-      "Pulsera trebol blanca y dorada con apliques strass. Contraste moderno con toque clásico.",
+      "Headset gamer liviano con sonido envolvente y micrófono flexible.",
     features: [
-      "Acero quirúrgico 316L con baño dorado",
-      "apliques strass de alta calidad",
-      "Hipoalergénica",
-      "Cierre lobster y extensión",
+      "Drivers 50 mm",
+      "Micrófono con cancelación de ruido",
+      "Diadema acolchada",
+      "Cable 2 m con control de volumen"
     ],
-    images: [
-      "Producto6.jpeg",
-      "Producto7.jpeg"
-    ],
+    images: ["Producto6.jpeg", "Producto7.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.8,
     reviews: 176,
-    weight: "16 cm + 4 cm",
-    ingredients: "Cultured pearls, 18k gold plated stainless steel"
+    weight: "260 g",
+    ingredients: "Conector 3.5 mm + splitter PC"
   },
   {
     id: 7,
-    name: "Pulsera trébol dorada",
+    name: "Cable USB-C a USB-C 60W (1 m)",
     price: 10000,
     originalPrice: 12000,
-    category: "bracelets",
+    category: "cables",
     description:
-      "Pulsera trébol dorada con barra ancha. Un diseño moderno y elegante para cualquier ocasión.",
+      "Cable reforzado para carga rápida y transferencia estable.",
     features: [
-      "Acero quirúrgico 316L con baño de oro 18k",
-      "Barra de 30 mm de ancho",
-      "Hipoalergénico, libre de níquel",
-      "Cierre seguro tipo lobster", 
-      "Longitud 42 cm + 5 cm de extensión"
+      "Soporta hasta 60W (20V/3A)",
+      "Revestimiento trenzado anti-nudos",
+      "Conectores reforzados",
+      "Datos hasta 480 Mbps"
     ],
-    images: [
-      "Producto11.jpeg",
-      "Producto10.jpeg"
-    ],
+    images: ["Producto11.jpeg", "Producto10.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.9,
     reviews: 154,
-    weight: "42+5 cm",
-    ingredients: "18k gold plated stainless steel"
+    weight: "1 m",
+    ingredients: "USB-C 2.0, PD hasta 60W"
   },
   {
     id: 8,
-    name: "Pulsera trébol combinada",
+    name: "Teclado Mecánico RGB 60%",
     price: 10000,
-    category: "bracelets",
+    category: "accesoriosPc",
     description:
-      "Pulsera trébol combinadas en color rojo y negro. Versátiles y modernas.",
+      "Formato compacto con switches táctiles y retroiluminación RGB.",
     features: [
-      "Acero quirúrgico 316L con baño dorado",
-      "Trébol esmaltado en colores combinados",
-      "Hipoalergénica y resistente al agua",
-      "Cierre seguro y ajuste cómodo"
+      "Layout 61 teclas",
+      "Switches táctiles hot-swap",
+      "RGB con múltiples efectos",
+      "Cable USB-C desmontable"
     ],
-    images: [
-      "Producto8.jpeg"
-    ],
+    images: ["Producto8.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.7,
     reviews: 134,
-    weight: "Tallas 6, 7 y 8",
-    ingredients: "acero quirúrgico 316L con baño dorado"
+    weight: "580 g",
+    ingredients: "Compatibilidad: Windows/Mac"
   },
   {
     id: 9,
-    name: "Pulsera trébol verde",
+    name: "Lente Clip Gran Angular 0.45x",
     price: 10000,
-    category: "bracelets",
+    category: "accesoriosCel",
     description:
-      "Pulsera trébol verde con apliques strass. Contraste moderno con toque clásico.",
+      "Lente gran angular para fotos amplias y selfies grupales.",
     features: [
-      "Acero quirúrgico 316L con baño dorado",
-      "apliques strass de alta calidad",
-      "Hipoalergénica",
-      "Cierre lobster y extensión",
+      "Clip universal anti-rayas",
+      "Incluye macro 12x",
+      "Cristal multilayer",
+      "Estuche de transporte"
     ],
-    images: [
-      "Producto9.jpeg"
-    ],
+    images: ["Producto9.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.8,
     reviews: 178,
-    weight: "Ø 12 mm",
-    ingredients: "acero quirúrgico 316L con baño dorado"
+    weight: "90 g",
+    ingredients: "Compatibilidad: iOS/Android"
   },
   {
     id: 10,
-    name: "Pulsera acero dorado",
+    name: "Mouse Inalámbrico Silent",
     price: 4000,
     originalPrice: 6000,
-    category: "bracelets",
+    category: "accesoriosPc",
     description:
-      "Pulsera acero dorado. Contraste moderno con toque clásico.",
+      "Mouse silencioso con 1600 DPI y receptor USB.",
     features: [
-      "Acero quirúrgico 316L con baño dorado",
-      "apliques strass de alta calidad",
-      "Hipoalergénica",
-      "Cierre lobster y extensión",
+      "Click silencioso",
+      "DPI ajustable 800/1200/1600",
+      "Autonomía hasta 12 meses",
+      "Almacenamiento del dongle"
     ],
-    images: [
-      "Producto15.jpeg"
-    ],
+    images: ["Producto15.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.8,
     reviews: 178,
-    weight: "Ø 12 mm",
-    ingredients: "acero quirúrgico 316L con baño dorado"
+    weight: "78 g",
+    ingredients: "USB 2.0, 2.4 GHz"
   },
   {
     id: 11,
-    name: "Anillo colibrí strass",
+    name: "Cable Lightning a USB-A (1 m)",
     price: 7000,
-    category: "rings",
+    category: "cables",
     description:
-      "Anillo colibrí con strass. Contraste moderno con toque clásico.",
+      "Cable para iPhone/iPad con refuerzo en extremos.",
     features: [
-      "Acero quirúrgico 316L con baño dorado",
-      "apliques strass de alta calidad",
-      "Hipoalergénica",
-      "Cierre lobster y extensión",
+      "Carga y datos",
+      "Conectores reforzados",
+      "Longitud 1 m",
+      "MFI-like (alta compatibilidad)"
     ],
-    images: [
-      "Producto16.jpeg"
-    ],
+    images: ["Producto16.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.8,
     reviews: 178,
-    weight: "Ø 12 mm",
-    ingredients: "acero quirúrgico 316L con baño dorado"
+    weight: "1 m",
+    ingredients: "Lightning a USB-A"
   },
   {
     id: 12,
-    name: "Pulsera trébol combinada dorada strass",
+    name: "Cargador Inalámbrico Qi 15W",
     price: 10000,
-    category: "bracelets",
+    category: "cargadores",
     description:
-      "Pulsera trébol combinada dorada con apliques strass. Contraste moderno con toque clásico.",
+      "Base de carga rápida Qi con luz de estado tenue.",
     features: [
-      "Acero quirúrgico 316L con baño dorado",
-      "apliques strass de alta calidad",
-      "Hipoalergénica",
-      "Cierre lobster y extensión",
+      "Salida hasta 15W",
+      "Protección térmica",
+      "Cable USB-C incluido",
+      "Goma antideslizante"
     ],
-    images: [
-      "Producto12.jpeg",
-      "Producto10.jpeg"
-    ],
+    images: ["Producto12.jpeg", "Producto10.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.8,
     reviews: 178,
-    weight: "Ø 12 mm",
-    ingredients: "acero quirúrgico 316L con baño dorado"
+    weight: "85 g",
+    ingredients: "Entrada 5V/2A, 9V/2A"
   },
   {
     id: 13,
-    name: "Esclava clavo plateada",
+    name: "Parlante Bluetooth Waterproof",
     price: 12000,
-    category: "esclavas",
+    category: "btParlantes",
     description:
-      "Esclava clavo plateada con apliques strass. Contraste moderno con toque clásico.",
+      "Parlante con certificación IPX7 para pileta y ducha.",
     features: [
-      "Acero quirúrgico 316L con baño plateado",
-      "Alta calidad",
-      "Hipoalergénica",
-      "Cierre lobster y extensión",
+      "IPX7 sumergible",
+      "Vinculación estéreo TWS",
+      "Autonomía 12 h",
+      "Bluetooth 5.3"
     ],
-    images: [
-      "Producto13.jpeg"
-    ],
+    images: ["Producto13.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.8,
     reviews: 178,
-    weight: "Ø 12 mm",
-    ingredients: "acero quirúrgico 316L"
+    weight: "510 g",
+    ingredients: "Entrada USB-C, cable incluido"
   },
   {
     id: 14,
-    name: "Esclava clavo dorada",
+    name: "Auriculares Over-Ear ANC",
     price: 12000,
-    category: "esclavas",
+    category: "auriculares",
     description:
-      "Esclava clavo dorada con apliques strass. Contraste moderno con toque clásico.",
+      "Over-ear con cancelación activa de ruido y modo transparencia.",
     features: [
-      "Acero quirúrgico 316L con baño dorado",
-      "apliques strass de alta calidad",
-      "Hipoalergénica",
-      "Cierre lobster y extensión",
+      "ANC híbrido",
+      "Hasta 30 h de batería",
+      "Carga rápida USB-C",
+      "Multipunto (2 dispositivos)"
     ],
-    images: [
-      "Producto14.jpeg"
-    ],
+    images: ["Producto14.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.8,
     reviews: 178,
-    weight: "Ø 12 mm",
-    ingredients: "acero quirúrgico 316L con baño dorado"
+    weight: "240 g",
+    ingredients: "Bluetooth 5.2, códec AAC"
   },
   {
     id: 15,
-    name: "Anillo piedra colores",
+    name: "Hub USB-C 6-en-1",
     price: 5000,
-    category: "rings",
+    category: "accesoriosPc",
     description:
-      "Anillo piedra colores con apliques strass. Contraste moderno con toque clásico.",
+      "Expansor USB-C con HDMI, USB y lector de tarjetas.",
     features: [
-      "Acero quirúrgico 316L con baño dorado",
-      "apliques strass de alta calidad",
-      "Hipoalergénica",
-      "Cierre lobster y extensión",
+      "HDMI 4K@30Hz",
+      "2× USB-A 5Gbps",
+      "Lector SD/microSD",
+      "Passthrough PD 60W"
     ],
-    images: [
-      "Producto17.jpeg"
-    ],
+    images: ["Producto17.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.8,
     reviews: 178,
-    weight: "Ø 12 mm",
-    ingredients: "acero quirúrgico 316L con baño dorado"
+    weight: "72 g",
+    ingredients: "USB-C, PD hasta 60W"
   },
   {
     id: 16,
-    name: "Aros piedra multicolor",
+    name: "Power Bank 10.000 mAh",
     price: 4000,
-    category: "earrings",
+    category: "cargadores",
     description:
-      "Aros piedra multicolor con apliques strass. Contraste moderno con toque clásico.",
+      "Batería portátil compacta con dos salidas y display LED.",
     features: [
-      "Acero quirúrgico 316L con baño dorado",
-      "apliques strass de alta calidad",
-      "Hipoalergénica",
-      "Cierre lobster y extensión",
+      "Capacidad real 10.000 mAh",
+      "2 salidas USB + 1 USB-C",
+      "Carga rápida 18W",
+      "Display de porcentaje"
     ],
-    images: [
-      "Producto18.jpeg"
-    ],
+    images: ["Producto18.jpeg"],
     inStock: true,
     featured: false,
     rating: 4.8,
     reviews: 178,
-    weight: "Ø 12 mm",
-    ingredients: "acero quirúrgico 316L con baño dorado"
+    weight: "232 g",
+    ingredients: "Entrada/salida USB-C, Micro-USB"
   }
-
 ];
 
 export const categories = [
   { id: 'all', name: 'Todos los productos', count: products.length },
-  { id: 'necklaces', name: 'Collares', count: products.filter(p => p.category === 'necklaces').length },
-  { id: 'esclavas', name: 'esclavas', count: products.filter(p => p.category === 'esclavas').length },
-  { id: 'bracelets', name: 'Pulseras', count: products.filter(p => p.category === 'bracelets').length },
-  { id: 'rings', name: 'Anillos', count: products.filter(p => p.category === 'rings').length },
-  { id: 'earrings', name: 'Aros', count: products.filter(p => p.category === 'earrings').length },
-  { id: 'piercing', name: 'Piercing', count: products.filter(p => p.category === 'Piercing').length },
-  { id: 'sets', name: 'Sets', count: products.filter(p => p.category === 'sets').length }
+  { id: 'auriculares', name: 'Auriculares', count: products.filter(p => p.category === 'auriculares').length },
+  { id: 'smartwatchs', name: 'Smartwatchs', count: products.filter(p => p.category === 'smartwatchs').length },
+  { id: 'cargadores', name: 'Cargadores', count: products.filter(p => p.category === 'cargadores').length },
+  { id: 'btParlantes', name: 'Parlantes Bluetooth', count: products.filter(p => p.category === 'btParlantes').length },
+  { id: 'accesoriosPc', name: 'Accesorios de PC', count: products.filter(p => p.category === 'accesoriosPc').length },
+  { id: 'cables', name: 'Cables', count: products.filter(p => p.category === 'cables').length },
+  { id: 'accesoriosCel', name: 'Accesorios para celular', count: products.filter(p => p.category === 'accesoriosCel').length }
 ];
-
-export const featuredProducts = products.filter(product => product.featured);
