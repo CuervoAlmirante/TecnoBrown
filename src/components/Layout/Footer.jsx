@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import { toast } from '@/components/ui/use-toast';
-import logo from '@/assets/paloGlowLogo1.png'
 
 export function Footer() {
   const handleSocialClick = (platform) => {
@@ -14,9 +13,6 @@ export function Footer() {
       case 'Instagram':
         window.open('https://www.instagram.com/paloglow', '_blank');
         break;
-      case 'Twitter':
-        window.open('https://www.twitter.com/paloglow', '_blank');
-        break;
       default:
         break;
     }
@@ -25,13 +21,9 @@ export function Footer() {
   const handleNewsletterSubmit = (e) => {
     e.preventDefault();
     toast({
-      title: "Lo estamos trabajando ❤️"
+      title: "🚧 Newsletter signup isn't implemented yet—but don't worry! Esta funcionalidad está en desarrollo!"
     });
   };
-
-  const handleAutorClick = () => {
-    window.open('https://www.hasperue.com/', '_blank');
-  }
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -45,12 +37,12 @@ export function Footer() {
                 transition={{ duration: 0.5 }}
                 className="w-8 h-8 rounded-full flex items-center justify-center"
               >
-                <span className="text-white font-bold text-lg"><img src={logo} alt="PaloGlow Logo" /></span>
+                <span className="text-white font-bold text-lg">👑</span>
               </motion.div>
-              <span className="text-xl logo font-bold">PaloGlow</span>
+              <span className="text-xl font-bold">TecnoBrown</span>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Colección de joyas: collares, pulseras y accesorios únicos que realzan tu estilo y cuentan tu historia. 
+              Tecnología que te conecta, precios que te sorprenden
             </p>
             <div className="flex space-x-4">
               <motion.button
@@ -68,14 +60,6 @@ export function Footer() {
                 className="text-gray-400 hover:text-amber-400 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => handleSocialClick('Twitter')}
-                className="text-gray-400 hover:text-amber-400 transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
               </motion.button>
             </div>
           </div>
@@ -104,25 +88,25 @@ export function Footer() {
             <span className="text-lg font-semibold">Servicios</span>
             <nav className="flex flex-col space-y-2">
               <button 
-                onClick={() => toast({ title: "Lo estamos trabajando ❤️" })}
+                onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
                 className="text-gray-300 hover:text-amber-400 transition-colors text-sm text-left"
               >
                 Info de envíos
               </button>
               <button 
-                onClick={() => toast({ title: "Lo estamos trabajando ❤️" })}
+                onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
                 className="text-gray-300 hover:text-amber-400 transition-colors text-sm text-left"
               >
                 Cambios
               </button>
               <button 
-                onClick={() => toast({ title: "Lo estamos trabajando ❤️" })}
+                onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
                 className="text-gray-300 hover:text-amber-400 transition-colors text-sm text-left"
               >
                 FAQ
               </button>
               <button 
-                onClick={() => toast({ title: "Lo estamos trabajando ❤️" })}
+                onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
                 className="text-gray-300 hover:text-amber-400 transition-colors text-sm text-left"
               >
                 Size Guide
@@ -136,15 +120,15 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-sm text-gray-300">
                 <Mail className="h-4 w-4" />
-                <span>palomaagomez06@gmail.com</span>
+                <span>picci.qa@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-300">
                 <Phone className="h-4 w-4" />
-                <span>(011) 32801394</span>
+                <span>(011) 68629870</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-300">
                 <MapPin className="h-4 w-4" />
-                <span>José Mármol</span>
+                <span>Alte. Brown</span>
               </div>
             </div>
             
@@ -170,16 +154,21 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 Palo Glow. Todos los derechos reservados.
+            © 2025 TecnoBrown. Todos los derechos reservados.
           </p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <button 
-              onClick={handleAutorClick}
+              onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
               className="text-gray-400 hover:text-amber-400 text-sm transition-colors"
             >
-              Desarrollado por Fernando Hasperué
+              Política de Privacidad
             </button>
-            <Link to="/admin/products">Admin</Link>
+            <button 
+              onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
+              className="text-gray-400 hover:text-amber-400 text-sm transition-colors"
+            >
+              Términos de Servicio
+            </button>
           </div>
         </div>
       </div>
