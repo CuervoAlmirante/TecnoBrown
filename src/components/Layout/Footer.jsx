@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import { toast } from '@/components/ui/use-toast';
 
-export function Footer() {
+export function Footer({ onAdminClick }) {
   const handleSocialClick = (platform) => {
-    switch(platform) {
+    switch (platform) {
       case 'Facebook':
         window.open('https://www.facebook.com/paloglow', '_blank');
         break;
@@ -68,18 +68,10 @@ export function Footer() {
           <div className="space-y-4">
             <span className="text-lg font-semibold">Links</span>
             <nav className="flex flex-col space-y-2">
-              <Link to="/" className="text-gray-300 hover:text-amber-400 transition-colors text-sm">
-                Home
-              </Link>
-              <Link to="/shop" className="text-gray-300 hover:text-amber-400 transition-colors text-sm">
-                Tienda
-              </Link>
-              <Link to="/about" className="text-gray-300 hover:text-amber-400 transition-colors text-sm">
-                Nosotros
-              </Link>
-              <Link to="/contact" className="text-gray-300 hover:text-amber-400 transition-colors text-sm">
-                Contacto
-              </Link>
+              <Link to="/" className="text-gray-300 hover:text-amber-400 transition-colors text-sm">Home</Link>
+              <Link to="/shop" className="text-gray-300 hover:text-amber-400 transition-colors text-sm">Tienda</Link>
+              <Link to="/about" className="text-gray-300 hover:text-amber-400 transition-colors text-sm">Nosotros</Link>
+              <Link to="/contact" className="text-gray-300 hover:text-amber-400 transition-colors text-sm">Contacto</Link>
             </nav>
           </div>
 
@@ -87,30 +79,15 @@ export function Footer() {
           <div className="space-y-4">
             <span className="text-lg font-semibold">Servicios</span>
             <nav className="flex flex-col space-y-2">
-              <button 
-                onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
-                className="text-gray-300 hover:text-amber-400 transition-colors text-sm text-left"
-              >
-                Info de envíos
-              </button>
-              <button 
-                onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
-                className="text-gray-300 hover:text-amber-400 transition-colors text-sm text-left"
-              >
-                Cambios
-              </button>
-              <button 
-                onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
-                className="text-gray-300 hover:text-amber-400 transition-colors text-sm text-left"
-              >
-                FAQ
-              </button>
-              <button 
-                onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
-                className="text-gray-300 hover:text-amber-400 transition-colors text-sm text-left"
-              >
-                Size Guide
-              </button>
+              {['Info de envíos', 'Cambios', 'FAQ', 'Size Guide'].map((item) => (
+                <button
+                  key={item}
+                  onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
+                  className="text-gray-300 hover:text-amber-400 transition-colors text-sm text-left"
+                >
+                  {item}
+                </button>
+              ))}
             </nav>
           </div>
 
@@ -131,7 +108,7 @@ export function Footer() {
                 <span>Alte. Brown</span>
               </div>
             </div>
-            
+
             <form onSubmit={handleNewsletterSubmit} className="space-y-2">
               <span className="text-sm font-medium">Newsletter</span>
               <div className="flex">
@@ -156,18 +133,24 @@ export function Footer() {
           <p className="text-gray-400 text-sm">
             © 2025 TecnoBrown. Todos los derechos reservados.
           </p>
-          <div className="flex space-x-6 mt-4 sm:mt-0">
-            <button 
+          <div className="flex space-x-6 mt-4 sm:mt-0 items-center">
+            <button
               onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
               className="text-gray-400 hover:text-amber-400 text-sm transition-colors"
             >
               Política de Privacidad
             </button>
-            <button 
+            <button
               onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
               className="text-gray-400 hover:text-amber-400 text-sm transition-colors"
             >
               Términos de Servicio
+            </button>
+            <button
+              onClick={onAdminClick}
+              className="text-amber-500 hover:text-white text-sm font-semibold transition-colors border border-amber-500 px-3 py-1 rounded"
+            >
+              Admin
             </button>
           </div>
         </div>

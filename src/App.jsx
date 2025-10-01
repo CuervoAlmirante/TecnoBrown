@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, useNavigate } from 'react-router-dom' // ⬅️ Agregá useNavigate
 import ScrollToTop from '@/components/ScrollToTop'
 import { Header } from '@/components/Layout/Header'
 import { Footer } from '@/components/Layout/Footer'
@@ -16,6 +16,12 @@ import AdminProductEdit from '@/pages/AdminProductEdit'
 import { Scroll } from 'lucide-react'
 
 function App() {
+  const navigate = useNavigate(); // ⬅️ Hook para redirección
+
+  const handleAdminClick = () => {
+    navigate('/admin/login'); // ⬅️ Redirige al login de admin
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -57,7 +63,7 @@ function App() {
           />
         </Routes>
       </main>
-      <Footer />
+      <Footer onAdminClick={handleAdminClick} /> {/* ⬅️ Prop agregada */}
       <Toaster />
     </div>
   )
