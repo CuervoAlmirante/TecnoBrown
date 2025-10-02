@@ -8,7 +8,6 @@ import { useCart } from '@/hooks/useCart'
 import { toast } from '@/components/ui/use-toast'
 import { supabase } from '@/lib/supabaseClient'
 import logo from '@/assets/logo_tecnobrown.png'
-
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [session, setSession] = useState(null)
@@ -47,18 +46,26 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 glass-effect border-b">
+    <header className="sticky top-0 z-50 border-b"
+  style={{
+    backgroundColor: 'rgba(245, 242, 218, 1)', // ámbar muy claro
+    color: 'rgba(226, 151, 1, 1)',              // texto ámbar suave
+    borderBottom: '1px solid rgb(255, 213, 128)' // borde ámbar claro
+  }}
+>
+
+
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <motion.div
-              whileHover={{ rotate: 360, scale: 1.4 }}
-              transition={{ duration: 0.7 }}
-              className="w-8 h-8 rounded-full flex items-center justify-center"
-            >
-              <span className="text-white font-bold text-lg"><img src={logo} alt="PaloGlow Logo" /></span>
-            </motion.div> 
+  <motion.div
+    whileHover={{ y: -4 }}
+    transition={{ duration: 0.3 }}
+    className="w-8 h-8 rounded-full flex items-center justify-center bg-amber-100 shadow-md"
+  >
+    <img src={logo} alt="PaloGlow Logo" className="w-full h-full object-contain" />
+  </motion.div>
 
             {/* LOGO LETRAS */}
             <img src="/logo_tecnobrownletras.png" alt="Logo" className="h-8 w-18" />

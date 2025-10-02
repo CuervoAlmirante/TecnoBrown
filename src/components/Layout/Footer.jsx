@@ -37,7 +37,12 @@ export function Footer({ onAdminClick }) {
                 transition={{ duration: 0.5 }}
                 className="w-8 h-8 rounded-full flex items-center justify-center"
               >
-                <span className="text-white font-bold text-lg">👑</span>
+                <img
+  src="/logo_tecnobrown.png"
+  alt="Logo HawkByte"
+  className="h-6 w-auto"
+/>
+
               </motion.div>
               <span className="text-xl font-bold">TecnoBrown</span>
             </div>
@@ -134,9 +139,12 @@ export function Footer({ onAdminClick }) {
   © 2025 TecnoBrown. Todos los derechos reservados.
 </p>
 <div className="flex items-center gap-2 text-sm text-gray-600 mt-1">
-  <span>Desarrollado por HawkByte</span>
-  <img src="/logo_hawkbyte.png" alt="Logo Hawkbyte" className="h-6 w-auto" />
+  <span>Developed by HawkByte</span>
+  <a href="https://fernskt.github.io/Halcon-byte/" target="_blank" rel="noopener noreferrer">
+    <img src="/logo_hawkbyte.png" alt="Logo HawkByte" className="h-6 w-auto cursor-pointer hover:opacity-80 transition-opacity duration-200" />
+  </a>
 </div>
+
 
           <div className="flex space-x-6 mt-4 sm:mt-0 items-center">
             <button

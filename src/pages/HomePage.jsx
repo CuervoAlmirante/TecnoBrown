@@ -83,18 +83,31 @@ export function HomePage() {
               >
                 <div className="space-y-4">
                   <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                    className="inline-flex items-center px-4 py-2 bg-amber-100 rounded-full text-amber-800 text-sm font-medium"
-                  >
-                    👑​ Viví a la moda.
-                  </motion.div>
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+  style={{
+    backgroundColor: 'rgb(255, 236, 179)', // ámbar claro
+    border: '2px solid rgb(254, 176, 8)',   // ámbar vibrante
+    color: 'rgb(255, 143, 0)',              // texto ámbar oscuro
+    padding: '8px 16px',
+    borderRadius: '9999px',
+    fontSize: '0.875rem',
+    fontWeight: '500',
+    display: 'inline-flex',
+    alignItems: 'center'
+  }}
+>
+  Tu tienda Tech
+</motion.div>
 
-                  <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight text-shadow">
-                    TecnoBrown
-                  </h1>
 
+
+                  <img
+    src="/logo_tecnobrownletras.png"
+    alt="TecnoBrown Logo"
+    className="h-16 lg:h-24 w-auto mx-auto -ml-8"
+  />
                   <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
             Tecnología que se adapta a vos. Conectá, disfrutá, evolucioná.
           </p>
@@ -120,7 +133,7 @@ export function HomePage() {
                     <div className="text-sm text-gray-600">Clientes Felices</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-gray-900">4.9★</div>
+                    <div className="text-2xl font-bold text-gray-900">4.7★</div>
                     <div className="text-sm text-gray-600">Puntuación</div>
                   </div>
                   <div className="text-center">
