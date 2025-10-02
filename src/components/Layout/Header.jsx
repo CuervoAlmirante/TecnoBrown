@@ -7,7 +7,7 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import { useCart } from '@/hooks/useCart'
 import { toast } from '@/components/ui/use-toast'
 import { supabase } from '@/lib/supabaseClient'
-import logo from '@/assets/paloGlowLogo1.png'
+import logo from '@/assets/logo_tecnobrown.png'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -40,10 +40,10 @@ export function Header() {
   const isActive = (path) => location.pathname === path
 
   const handleWishlistClick = () => {
-    toast({ title: 'Lo estamos trabajando ❤️' })
+    toast({ title: 'Lo estamos trabajando' })
   }
   const handleSearchClick = () => {
-    toast({ title: 'Lo estamos trabajando ❤️' })
+    toast({ title: 'Lo estamos trabajando' })
   }
 
   return (
@@ -53,14 +53,17 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <motion.div
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.5 }}
+              whileHover={{ rotate: 360, scale: 1.4 }}
+              transition={{ duration: 0.7 }}
               className="w-8 h-8 rounded-full flex items-center justify-center"
             >
               <span className="text-white font-bold text-lg"><img src={logo} alt="PaloGlow Logo" /></span>
             </motion.div> 
-            <span className="text-xl font-bold text-gray-900 logo">PaloGlow</span>
+
+            {/* LOGO LETRAS */}
+            <img src="/logo_tecnobrownletras.png" alt="Logo" className="h-8 w-18" />
           </Link>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

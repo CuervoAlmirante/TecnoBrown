@@ -62,20 +62,12 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Palo Glow | brillo que cuenta tu historia</title>
-        <meta name="description" content="Joyas para elevar tus outfits: collares, pulseras, anillos y aros hipoalergénicos en acero 316L bañados en oro 18k." />
-        <link rel="canonical" href="https://fernskt.github.io/Palo-Glow/" />
-        {/* JSON-LD Organization */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            name: "Palo Glow",
-            url: "https://fernskt.github.io/Palo-Glow/",
-            sameAs: ["https://www.instagram.com/paloglow"]
-          })}
-        </script>
-      </Helmet>
+        <title>TecnoBrown - Tu tienda Tech</title>
+  <meta name="description" content="Discover pure, artisanal honey and beeswax products at TecnoBrown. From wildflower honey to natural candles and skincare, experience the golden goodness of nature." />
+  <meta property="og:title" content="TecnoBrown - Brillo sutil, impacto real | Natural Artisanal Quality" />
+  <meta property="og:description" content="Discover pure, artisanal honey and beeswax products at TecnoBrown. From wildflower honey to natural candles and skincare, experience the golden goodness of nature." />
+  <link rel="icon" type="image/png" href="/logo.png" />
+</Helmet>
 
 
       <div className="min-h-screen">
@@ -100,13 +92,13 @@ export function HomePage() {
                   </motion.div>
 
                   <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight text-shadow">
-                    Palo Glow - brillo que cuenta tu historia.
+                    TecnoBrown
                   </h1>
 
                   <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                    Descubre nuestra colección de joyas: collares, pulseras y accesorios únicos que realzan tu estilo y cuentan tu historia. Cada pieza está pensada para acompañarte en cada momento especial.
-                  </p>
-                </div>
+            Tecnología que se adapta a vos. Conectá, disfrutá, evolucioná.
+          </p>
+        </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link to="/shop">
@@ -144,12 +136,15 @@ export function HomePage() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="relative z-10">
-                  <img
-                    className="w-full h-auto rounded-2xl shadow-2xl animate-float"
-                    alt="Artisanal honey jars and beeswax products arranged beautifully"
-                    src={Joyeria} />
-                </div>
+                {/* Featured Products 
+        <div className="relative z-10">
+          <img
+            className="w-full h-auto rounded-2xl shadow-2xl animate-float"
+            alt="Artisanal honey jars and beeswax products arranged beautifully"
+            src={Joyeria}
+          />
+        </div>
+        */}
 
                 {/* Floating Elements */}
                 <motion.div
@@ -178,7 +173,7 @@ export function HomePage() {
               className="text-center mb-16"
             >
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Por qué elegir Palo Glow?
+                Por qué elegir TecnoBrown?
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 Calidad, sostenibilidad y pasión en cada detalle.
@@ -372,7 +367,7 @@ export function HomePage() {
                 Listo para brillar todos los días?
               </h2>
               <p className="text-xl text-white/90 leading-relaxed">
-                Sumate a la comunidad Palo Glow y sentí la diferencia: diseño consciente, y materiales de calidad. Envío gratis en compras desde ARS 20.000.
+                Sumate a la comunidad TecnoBrown y sentí la diferencia. Envíos gratis en compras desde ARS 40.000.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/shop">

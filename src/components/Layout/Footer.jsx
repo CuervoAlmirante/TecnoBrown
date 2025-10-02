@@ -79,7 +79,7 @@ export function Footer({ onAdminClick }) {
           <div className="space-y-4">
             <span className="text-lg font-semibold">Servicios</span>
             <nav className="flex flex-col space-y-2">
-              {['Info de envíos', 'Cambios', 'FAQ', 'Size Guide'].map((item) => (
+              {['Info de envíos', 'Cambios', 'FAQ'].map((item) => (
                 <button
                   key={item}
                   onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
@@ -114,14 +114,14 @@ export function Footer({ onAdminClick }) {
               <div className="flex">
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="Ingresa tu email"
                   className="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-l-md text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                 />
                 <button
                   type="submit"
                   className="px-4 py-2 bg-amber-600 hover:bg-amber-700 rounded-r-md transition-colors text-sm font-medium"
                 >
-                  Subscribe
+                  Suscribite
                 </button>
               </div>
             </form>
@@ -130,9 +130,14 @@ export function Footer({ onAdminClick }) {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
-            © 2025 TecnoBrown. Todos los derechos reservados.
-          </p>
+          <p className="text-sm text-gray-600">
+  © 2025 TecnoBrown. Todos los derechos reservados.
+</p>
+<div className="flex items-center gap-2 text-sm text-gray-600 mt-1">
+  <span>Desarrollado por HawkByte</span>
+  <img src="/logo_hawkbyte.png" alt="Logo Hawkbyte" className="h-6 w-auto" />
+</div>
+
           <div className="flex space-x-6 mt-4 sm:mt-0 items-center">
             <button
               onClick={() => toast({ title: "🚧 Esta funcionalidad está en desarrollo!" })}
